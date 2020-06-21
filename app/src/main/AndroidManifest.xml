@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".NoodleSelect"></activity>
+        <activity android:name=".Test"/>
+        <activity android:name=".DefaultRecipe"/>
+        <activity android:name=".RecipeWrite"/>
+        <activity android:name=".NewRecipe"/>
 
     </application>
 

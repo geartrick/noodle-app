@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Noodle</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string-array name="noodle">-->
+        <!--<item>꼬꼬면</item>-->
+        <!--<item>팔도비빔면</item>-->
+        <!--<item>짜파게티</item>-->
+        <!--<item>스파게티</item>-->
+        <!--<item>신라면</item>-->
+    <!--</string-array>-->
 </resources>
