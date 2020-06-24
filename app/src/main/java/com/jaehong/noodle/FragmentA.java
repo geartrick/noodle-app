@@ -1,5 +1,6 @@
 package com.jaehong.noodle;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -38,6 +40,9 @@ public class FragmentA extends Fragment {
         final ConstraintLayout res2=(ConstraintLayout)view.findViewById(R.id.res2);
         final ConstraintLayout res3=(ConstraintLayout)view.findViewById(R.id.res3);
         final ConstraintLayout res4=(ConstraintLayout)view.findViewById(R.id.res4);
+
+        ImageView n1_1 = (ImageView)view.findViewById(R.id.n1_1);
+        ImageView n1_2 = (ImageView)view.findViewById(R.id.n1_2) ;
 
 
 
@@ -110,6 +115,22 @@ public class FragmentA extends Fragment {
                     y=0;
                     next2.setVisibility(View.VISIBLE);
                 }
+            }
+        });
+
+        n1_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(),Test.class);
+                i.putExtra("title","꼬꼬면");
+                startActivity(i);
+            }
+        });n1_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(),Test.class);
+                i.putExtra("title","팔도비빔면");
+                startActivity(i);
             }
         });
         return  view;

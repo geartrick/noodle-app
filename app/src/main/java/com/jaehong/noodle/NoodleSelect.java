@@ -36,7 +36,7 @@ public class NoodleSelect extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new FragmentC()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new FragmentB_3()).commit();
             }
         });
     }

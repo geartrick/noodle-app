@@ -19,18 +19,18 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/home"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:text="Button" />
+            android:text="home" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/a1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="650dp"
         android:orientation="vertical"
         android:visibility="visible">
 
@@ -63,15 +63,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:visibility="gone"></LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/empty"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
             android:visibility="visible">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/aaa1"
@@ -81,12 +79,20 @@
                 android:text="empty" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/aa3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="visible"></LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/b1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="650dp"
         android:orientation="vertical"
         android:visibility="gone">
 
@@ -101,6 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/paldo"
                 android:orientation="horizontal">
 
             </LinearLayout>
@@ -128,5 +135,11 @@
             android:layout_weight="1"
             android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="add" />
 
 </LinearLayout>

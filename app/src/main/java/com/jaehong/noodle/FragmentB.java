@@ -42,8 +42,6 @@ public class FragmentB extends Fragment {
                         return new FragmentB_1();
                     case  1:
                         return new FragmentB_2();
-                    case  2:
-                        return new FragmentB_3();
                     default:
                         return null;
                 }
@@ -52,7 +50,7 @@ public class FragmentB extends Fragment {
 
             @Override
             public int getCount() {
-                return 3;
+                return 2;
             }
         });
         viewPager.setCurrentItem(0);

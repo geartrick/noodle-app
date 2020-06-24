@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
    public DBHelper(Context context){
        super(context,"memodb",null,DATABASE_VERSION);
@@ -15,7 +15,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String memoSQL = "create table tb_memo"+
                 "(_id integer primary key autoincrement,"+
-                "text1," + "text2)";
+                "text1,"+"text2,"+"name,"+"ustr)";
         db.execSQL(memoSQL);
     }
 
