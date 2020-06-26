@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/s">
 
     <Button
         android:id="@+id/button"
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="148dp"
         android:text="Start"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,7 +30,8 @@
         android:layout_marginStart="182dp"
         android:layout_marginTop="193dp"
         android:layout_marginEnd="170dp"
-        android:text="라면앱 "
+        android:text="~ 라시피 ~"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

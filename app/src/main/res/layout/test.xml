@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="650dp"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <LinearLayout
             android:id="@+id/aa1"
